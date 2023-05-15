@@ -1,0 +1,32 @@
+menu "TP-LINK kernel features"
+config SFE_PPP_HEADER
+        bool "kernel support for sfe ppp header build"
+        default n
+        help
+          Say 'y' here if want to enable ppp header building for sfe
+
+config SFE_TUNNEL_HEADER
+        bool "kernel support for sfe tunnel header build"
+        default n
+        help
+          Say 'y' here if want to enable tunnel header building for sfe
+
+config TP_QCA_NSS_SFE_OPT
+		bool "kernel netfilter conntrack module for nss-sfe optimization"
+		default n
+		help
+          Say 'y' here if want to enable nss-sfe optimization
+
+config TEST_MODE
+		bool "uboot test_mode option"
+		default n
+		help
+          Say 'y' here if want to enable test_mode option
+
+config TP_QCA_NSS_SAMEADDR_FIX
+		bool "kernel ip6 tunnel module for nss-sfe not support v6plus same address"
+		default n
+		help
+          Say 'y' here if want to enable v6plus same address fix for qca nss
+
+endmenu
